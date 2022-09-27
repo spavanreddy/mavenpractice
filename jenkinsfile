@@ -13,14 +13,14 @@ stage('Test')
 {
 steps{
 echo "Testing the Code.........."
-bat "mvn test"
+bat "mvn install"
 }
 }
 stage('Compile') 
 {
 steps{
 echo "Compiling the Project.........."
-bat "mvn compile"
+
 }
 }
 stage('Deploy') 
